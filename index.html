@@ -1,1 +1,187 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blade Runner (1982)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: url('/mnt/data/下载.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    header, nav, section, footer {
+      background-color: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(4px);
+      transition: all 0.4s ease-in-out;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      margin: 0;
+      color: #00ffff;
+      transition: color 0.3s;
+    }
+    header h1:hover {
+      color: #ff4081;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #ff4081;
+      transition: width 0.3s;
+    }
+    nav a:hover {
+      color: #ff4081;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 1s ease forwards;
+    }
+    section:nth-child(even) {
+      animation-delay: 0.3s;
+    }
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      color: #ff4081;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border: 2px solid #333;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blade Runner (1982)</h1>
+    <p>Neo-noir sci-fi masterpiece directed by Ridley Scott</p>
+  </header>
+  <nav>
+    <a href="#plot">Plot</a>
+    <a href="#characters">Characters</a>
+    <a href="#themes">Themes</a>
+    <a href="#behind">Behind the Scenes</a>
+    <a href="#legacy">Legacy</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#media">Media</a>
+  </nav>
+
+  <section id="plot">
+    <h2>Plot Summary</h2>
+    <p>Rick Deckard, a “Blade Runner,” is tasked with hunting down rogue replicants who have illegally returned to Earth. As Deckard tracks them, he meets Rachael, a replicant who believes she's human. The story explores identity, mortality, and the essence of humanity, culminating in the famous “Tears in Rain” monologue by Roy Batty.</p>
+  </section>
+
+  <section id="characters">
+    <h2>Main Characters</h2>
+    <ul>
+      <li><strong>Rick Deckard</strong> – Harrison Ford</li>
+      <li><strong>Roy Batty</strong> – Rutger Hauer</li>
+      <li><strong>Rachael</strong> – Sean Young</li>
+      <li><strong>Pris</strong> – Daryl Hannah</li>
+      <li><strong>Eldon Tyrell</strong> – Joe Turkel</li>
+      <li><strong>Gaff</strong> – Edward James Olmos</li>
+    </ul>
+  </section>
+
+  <section id="themes">
+    <h2>Themes</h2>
+    <ul>
+      <li>What it means to be human</li>
+      <li>Artificial Intelligence and ethics</li>
+      <li>Memory and identity</li>
+      <li>Mortality and fear of death</li>
+      <li>Dystopia and corporate power</li>
+    </ul>
+  </section>
+
+  <section id="behind">
+    <h2>Behind the Scenes</h2>
+    <p>Directed by Ridley Scott, with cinematography by Jordan Cronenweth and a haunting score by Vangelis. Loosely based on Philip K. Dick's novel. Known for its detailed world-building, noir influences, and groundbreaking special effects. Multiple versions exist, including the Final Cut (2007).</p>
+  </section>
+
+  <section id="legacy">
+    <h2>Legacy & Influence</h2>
+    <p>Blade Runner helped define the cyberpunk genre. It influenced countless works like The Matrix and Ghost in the Shell. It remains a staple in philosophical and cinematic discussions about AI, ethics, and identity.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Blade_Runner_poster.jpg" alt="Blade Runner Poster">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Blade_Runner_Cityscape_Model.JPG/640px-Blade_Runner_Cityscape_Model.JPG" alt="Cityscape Model">
+    </div>
+  </section>
+
+  <section id="media">
+    <h2>Media</h2>
+    <p><a href="https://www.youtube.com/watch?v=eogpIG53Cis" target="_blank">Watch the Original Trailer</a></p>
+    <p><a href="https://www.youtube.com/watch?v=NoAzpa1x7jU" target="_blank">Watch the 'Tears in Rain' Scene</a></p>
+  </section>
+
+  <footer>
+    <p>Website by a Blade Runner fan | © 2025</p>
+  </footer>
+</body>
+</html>
